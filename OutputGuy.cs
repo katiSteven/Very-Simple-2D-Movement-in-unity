@@ -19,7 +19,7 @@ public class OutputGuy : MonoBehaviour {
 	// adds force to jump upwards
 	void GoUp(){
 		print("going up");
-		rb.AddForce(new Vector2(0,Jump_Force_yAxis+12.5f), ForceMode2D.Impulse);
+		rb.AddForce(new Vector2(0,Jump_Force_yAxis), ForceMode2D.Impulse);
 		isJumping = false;
 		pulledDown = true;
 	}
